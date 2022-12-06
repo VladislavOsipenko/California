@@ -1,0 +1,189 @@
+@media (max-width: 1400px)
+
+
+
+
+
+@media (max-width: 1200px)
+    .container
+        max-width: 1065px 
+
+
+
+@media (max-width: 992px)
+    .container
+        max-width: 880px
+    .shop
+        &__wrapper
+            grid-template-columns: repeat(2, minmax(220px, 350px))
+            justify-content: center
+            margin-top: 55px
+        #shop_second
+            grid-column: 1/2
+            grid-row: 3/6
+        #shop_third
+            grid-column: 2/3
+            grid-row: 3/6
+    .items
+        &__wrapper
+            display: grid
+            grid-template-columns: repeat(2, auto)
+            justify-content: space-around
+            row-gap: 20px
+    .ideas
+        &__wrapper
+            grid-template-columns: repeat(1, minmax(300px, 620px))
+            justify-content: center
+
+    .best
+        &__wrapper
+            flex-direction: column
+            padding-top: 20px
+            align-items: center
+        &-item 
+            margin-top: 20px
+    .footer
+        &__wrapper
+            display: grid
+            grid-template-columns: repeat(2, auto)
+            row-gap: 20px
+            justify-content: space-around
+        &__item 
+            &_main
+                grid-column: 1/3
+                text-align: center
+            
+
+
+
+@media (max-width: 768px)
+    .container
+        max-width: 680px
+    .header
+        &__wrapper
+            &_link
+                width: 120px
+        &__menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100%
+            padding: 20px 15px
+            background-color: rgba(0,0,0, .8)
+            transition: 0.6s all
+            z-index: 2
+            &_active 
+                left: 0
+            &_li
+                padding-right: 0
+                border: none
+                margin: 15px 0
+                
+            &_link 
+                font-size: 20px
+                color: #fff
+        &__hamburger
+            display: block
+            margin-top: 6px
+            width: 26px
+            height: 12px
+            span 
+                display: block 
+                height: 2px
+                width: 100%
+                background-color: #000000
+                margin-bottom: 2px
+                transition: 0.5s all
+            &_active 
+                span 
+                    margin-bottom: -2px 
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                            transform: translateY(3px) rotate(45deg)
+    .looking
+        &-form
+            &__in
+                width: 100%
+    .ideas
+        &__img
+            img
+                width: 100%
+        &__text
+            font-size: 20px
+    .items
+        &__wrapper
+            grid-template-columns: repeat(1, auto)
+    .slick-dots
+        button
+            width: 100px
+    .best
+        &-item 
+            &__img
+                padding: 0
+
+
+
+
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+        padding: 0 10px
+    .header
+        &__menu
+            &_link
+                font-size: 16px
+    .slick-dots
+        button
+            width: 50px
+    .shop
+        &__wrapper
+            grid-template-columns: repeat(2, minmax(140px, 350px))
+        &-item 
+            &-first, &-second, &-third, &-fourth
+                padding: 0 10px
+                &_title
+                    font-size: 18px
+                    line-height: 22px
+            &-fourth
+                &_flex
+                    margin-top: 40px
+        #shop_second
+            padding-top: 60px
+        #shop_third
+            padding-top: 60px
+    .looking
+        &__link
+            margin-top: 15px
+            &_flex-1, &_flex-2
+                display: grid
+                grid-template-columns: repeat(3, auto)
+                justify-content: space-around
+                row-gap: 10px
+                width: 100%
+            &_a 
+                padding: 8px 12px
+        &__thing
+            &_form
+                padding: 0 10px 10px 10px
+                button
+                    padding: 10px 15px
+                input
+                    padding: 10px 15px
+    .footer
+        &__item 
+            &_title
+                font-size: 18px
+            &_link
+                font-size: 15px
+        &__end
+            column-gap: 40px
+
+            
+

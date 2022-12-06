@@ -1,0 +1,103 @@
+.shop
+    &__title 
+        margin-top: 75px
+        font-family: 'Readex Pro'
+        font-size: 42px
+        line-height: 52px
+        text-align: center
+        color: #000000
+    &__subtitle
+        margin-top: 9px
+        font-family: 'Readex Pro'
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #000000
+    &__wrapper
+        margin-top: 55px
+        display: grid
+        grid-template-columns: repeat(4, minmax(220px, 350px))
+        grid-template-rows: repeat(3, auto)
+        gap: 16px
+    &-item 
+        &-first, &-second, &-third, &-fourth
+            padding: 0 42px
+            &_pretitle
+                font-family: 'Inter'
+                font-weight: 400
+                font-size: 15px
+                line-height: 19px
+                text-align: right
+                color: #000000
+            &_title
+                font-family: 'Readex Pro'
+                font-weight: 400
+                font-size: 32px
+                line-height: 38px
+                text-align: right
+                color: #000000
+            &_img
+                img
+                    width: 100%
+        &-first
+            transition: 0.3s all
+            &:hover
+                transform: scale(1.03)
+                transition: 0.3s all
+        &-second
+            padding: 0 16px
+            transition: 0.3s all
+            &_pretitle
+                margin-top: 41px
+                text-align: center
+            &_title
+                text-align: center
+            &:hover
+                transform: scale(1.03)
+                transition: 0.3s all
+        &-third
+            transition: 0.3s all
+            padding: 0
+            &_pretitle
+                text-align: center
+            &_title
+                text-align: center
+                padding-bottom: 42px
+            &:hover
+                transform: scale(1.03)
+                transition: 0.3s all
+        &-fourth
+            transition: 0.3s all
+            &_flex
+                margin-top:  82px
+            &:hover
+                transform: scale(1.03)
+                transition: 0.3s all
+
+
+    
+
+    #shop_first
+        grid-column: 1/3
+        grid-row: 1/3
+        box-shadow: 0px 0px 10px 0px grey
+    #shop_second
+        padding-top: 144px
+        grid-column: 3/4
+        grid-row: 1/5
+        box-shadow: 0px 0px 10px 0px grey
+    #shop_third
+        padding-top: 144px
+        grid-column: 4/5
+        grid-row: 1/5
+        box-shadow: 0px 0px 10px 0px grey
+    #shop_fourth
+        margin-top: 30px
+        grid-column: 1/3
+        box-shadow: 0px 0px 10px 0px grey
+        display: flex
+
+
+
+
