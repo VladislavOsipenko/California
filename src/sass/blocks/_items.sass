@@ -17,8 +17,24 @@
         margin-top: 31px
         display: flex
         justify-content: space-between
+        
     &__card
         width: 300px
+        opacity: 0
+        transform: translateX(-120%)
+        overflow: hidden
+        transition: all 0.8s
+        &._active
+            transform: translateX(0)
+            opacity: 1
+        &:nth-child(1)
+            transition-duration: 2.5s
+        &:nth-child(2)
+            transition-duration: 2s
+        &:nth-child(3)
+            transition-duration: 1.5s
+        &:nth-child(4)
+            transition-duration: 1s
         &_img
             padding: 28px
             img

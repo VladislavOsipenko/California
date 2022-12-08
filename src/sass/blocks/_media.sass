@@ -7,12 +7,65 @@
 @media (max-width: 1200px)
     .container
         max-width: 1065px 
+    .promo
+        &__item
+            padding: 0 30px
+        &__text
+            padding-top: 50px
+            width: 450px
+        &__title
+            font-size: 50px
+            line-height: 60px
+        &__subtitle
+            font-size: 14px
+        &__img
+            position: relative
+            img
+                width: 500px
+                height: 500px
+                transform: translateX(-15%)
+                
 
 
 
 @media (max-width: 992px)
     .container
         max-width: 880px
+    .promo
+        &__wrapper
+            flex-direction: column
+        &__text
+            width: 100%
+            padding-top: 50px
+            transform: translateY(40%)
+            padding-left: 0
+            text-align: center
+        &__item
+            padding: 0 60px
+        &__img
+            img
+                width: 100%
+                height: 100%
+                transform: translateY(-50%)
+        &__title
+            font-size: 45px
+            line-height: 50px
+            color: #fff
+            background-color: rgba(0, 0, 0, .4)
+            width: 90%
+            margin: 0 auto
+            border-radius: 20px
+        &__subtitle
+            color: #fff
+            padding: 10px 30px
+            background-color: rgba(0, 0, 0, .4)
+            width: 90%
+            border-radius: 20px
+            margin: 0 auto
+            margin-top: 19px
+        .slick-dots
+            button
+                width: 100px
     .shop
         &__wrapper
             grid-template-columns: repeat(2, minmax(220px, 350px))
@@ -107,6 +160,21 @@
                         display: none
                     &:nth-child(3)
                             transform: translateY(3px) rotate(45deg)
+    .promo
+        &__wrapper
+            max-height: 450px
+            width: 550px
+        &__text
+            transform: translateY(20%)
+        &__title
+            font-size: 40px
+            line-height: 45px
+        &__button
+            margin-top: 10px   
+        &__img
+            img
+                transform: translateY(-65%)
+
     .looking
         &-form
             &__in
@@ -120,9 +188,6 @@
     .items
         &__wrapper
             grid-template-columns: repeat(1, auto)
-    .slick-dots
-        button
-            width: 100px
     .best
         &-item 
             &__img
@@ -139,9 +204,29 @@
         &__menu
             &_link
                 font-size: 16px
-    .slick-dots
-        button
-            width: 50px
+    .promo
+        &__wrapper
+            max-height: 400px
+            width: 90vw
+            overflow: hidden
+
+        &__text
+            max-width: 500px
+            transform: translateY(0%)
+        &__title
+            font-size: 27px
+            line-height: 40px
+        &__button
+            margin-top: 10px  
+        &__img
+            max-width: 350px
+            img
+                max-width: 400px
+                height: 400px
+                z-index: -200
+        .slick-dots
+            button
+                width: 30px
     .shop
         &__wrapper
             grid-template-columns: repeat(2, minmax(140px, 350px))

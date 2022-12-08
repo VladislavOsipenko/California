@@ -8,6 +8,13 @@
         color: #000000
     &-form
         margin-top: 24px
+        opacity: 0
+        overflow: hidden
+        transform: scale(0)
+        transition: all 0.6s
+        &._active
+            opacity: 1
+            transform: scale(1)
         &__input
             position: relative
             text-align: center
@@ -37,6 +44,13 @@
             line-height: 17px
             color: #000000
     &__link
+        opacity: 0
+        overflow: hidden
+        transform: scale(0)
+        transition: all 0.6s
+        &._active
+            opacity: 1
+            transform: scale(1)
         &_flex-1
             margin: 0 auto
             margin-top: 18px
@@ -90,10 +104,25 @@
         &_img
             text-align: center
             padding-top: 14px
+            opacity: 0
+            overflow: hidden
+            transform: translateY(-120%)
+            transition: all 0.8s
+            transition-duration: 2s
+            &._active
+                opacity: 1
+                transform: translateY(0)
         &_form
             padding-top: 14px
             display: flex
             justify-content: center
+            opacity: 0
+            overflow: hidden
+            transform: translateY(120%)
+            transition: all 0.8s
+            &._active
+                opacity: 1
+                transform: translateY(0)
             input
                 background: #DCE5E2
                 padding: 16px 32px

@@ -20,12 +20,37 @@
         column-gap: 35px
     &__descr
         margin-top: -16px
+    &__img
+        opacity: 0
+        transform: translateX(-120%)
+        transition: all 0.8s
+        overflow: hidden
+        &._active
+            opacity: 1
+            transform: translateX(0)
     &__text
         padding-top: 28px
         font-family: 'Inter'
         font-size: 24px
         line-height: 30px
         color: #000000
+        opacity: 0
+        transform: translateX(120%)
+        transition: all 0.8s
+        overflow: hidden
+        &:nth-child(1)
+            transition-duration: 1s
+        &:nth-child(2)
+            transition-duration: 1.1s
+        &:nth-child(3)
+            transition-duration: 1.2s
+        &:nth-child(4)
+            transition-duration: 1.3s
+            
+        &._active
+            opacity: 1
+            transform: translateX(0)
+
     &__link
         display: block
         margin-top: 79px
@@ -35,5 +60,10 @@
         line-height: 29px
         text-transform: capitalize
         color: #000000
+        transform: scale(0)
+        transition: all 0.8s
+        &._active
+                transform: scale(1)
+                opacity: 1
         &:hover
             color: #000000
