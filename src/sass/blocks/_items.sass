@@ -17,6 +17,7 @@
         margin-top: 31px
         display: flex
         justify-content: space-between
+        overflow: hidden
         
     &__card
         width: 300px
@@ -59,6 +60,13 @@
             color: #000000
         #card_prise
             margin-top: 25px
+._anim_show
+    opacity: 0
+    transform: translateX(-120)
+    transition: all 0.8s
+._anim_show._active, ._active ._anim_show
+        opacity: 1
+        transform: translateX(0)
             
             
 
